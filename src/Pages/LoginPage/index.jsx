@@ -1,11 +1,15 @@
 import React from "react";
 import './styles.css';
 
-const HomePage = () =>{
+const LoginPage = () =>{
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Submit");
+  }
   return (
     <div className="login-box">
       <h2>Login</h2>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <div className="user-box">
           <input type="email" className="email" id="email" />
           <label>Email</label>
@@ -26,4 +30,4 @@ const HomePage = () =>{
   );
 }
 
-export default HomePage
+export default LoginPage
