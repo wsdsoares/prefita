@@ -18,13 +18,9 @@ const LoginPage = () =>{
           <input type="password" className="password" id="password"/>
           <label>Senha</label>
         </div>
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <button>
           ACESSAR
-        </a>
+        </button>
       </form>
     </div>
   );
